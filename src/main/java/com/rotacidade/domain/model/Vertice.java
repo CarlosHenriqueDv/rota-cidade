@@ -39,4 +39,12 @@ public class Vertice extends AbstractEntity<Long> {
     public void setListaArestaSaida(ArrayList<Aresta> listaArestaSaida) {
         this.listaArestaSaida = listaArestaSaida;
     }
+
+    public void adicionaArestaEntrada(Aresta arestaEntrada){
+        this.listaArestaEntrada.add(arestaEntrada);
+    }
+
+    public void adicionaArestaSaida(Aresta arestaSaida){
+        this.listaArestaSaida.add(arestaSaida);
+    }
 }

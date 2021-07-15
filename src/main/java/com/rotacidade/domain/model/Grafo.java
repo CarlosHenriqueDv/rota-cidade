@@ -1,15 +1,15 @@
-package com.rotacidade.domain.entidade;
+package com.rotacidade.domain.model;
 
 
 import java.util.ArrayList;
 
 
-public class Grafo extends AbstractEntity {
+public class Grafo extends AbstractEntity<Long> {
 
-    ArrayList<Vertice> listaDeVertices;
+    private ArrayList<Vertice> listaDeVertices;
 
 
-    ArrayList<Aresta> listaDeArestas;
+    private ArrayList<Aresta> listaDeArestas;
 
     public Grafo(ArrayList<Vertice> listaDeVertices, ArrayList<Aresta> listaDeArestas) {
         this.listaDeVertices = listaDeVertices;

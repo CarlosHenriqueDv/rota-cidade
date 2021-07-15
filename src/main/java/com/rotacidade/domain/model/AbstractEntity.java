@@ -1,4 +1,4 @@
-package com.rotacidade.domain.entidade;
+package com.rotacidade.domain.model;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

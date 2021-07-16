@@ -18,6 +18,8 @@ public class Grafo extends AbstractEntity<Long> {
     }
 
     public Grafo() {
+        this.listaDeVertices = new ArrayList<>();
+        this.listaDeArestas = new ArrayList<>();
     }
 
     public ArrayList<Vertice> getListaDeVertices() {
@@ -50,8 +52,8 @@ public class Grafo extends AbstractEntity<Long> {
     }
 
     public void adicionaAresta(BigDecimal distancia, Vertice verticeInicio, Vertice verticeFim ){
-        Vertice inicio = buscaVerticePorBairro(verticeInicio.getBairro());
-        Vertice fim = buscaVerticePorBairro(verticeInicio.getBairro());
+        Vertice inicio = buscaVertice(verticeInicio.getBairro());
+        Vertice fim = buscaVertice(verticeInicio.getBairro());
         Aresta aresta = new Aresta(inicio, fim, distancia);
 
         verticeInicio.adicionaArestaSaida(aresta);
@@ -60,7 +62,7 @@ public class Grafo extends AbstractEntity<Long> {
         this.listaDeArestas.add(aresta);
     }
 
-    public Vertice buscaVerticePorBairro(String nomeVertice){
+    public Vertice buscaVertice(String nomeVertice){
         return this.listaDeVertices.stream().filter(v -> v.getBairro().equals(nomeVertice)).findFirst().orElse(null);
     }
 

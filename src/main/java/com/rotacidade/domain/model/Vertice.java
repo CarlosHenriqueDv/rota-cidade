@@ -60,18 +60,13 @@ public class Vertice extends AbstractEntity<Long> {
 
         Vertice vertice = (Vertice) o;
 
-        if (bairro != null ? !bairro.equals(vertice.bairro) : vertice.bairro != null) return false;
-        if (listaArestaEntrada != null ? !listaArestaEntrada.equals(vertice.listaArestaEntrada) : vertice.listaArestaEntrada != null)
-            return false;
-        return listaArestaSaida != null ? listaArestaSaida.equals(vertice.listaArestaSaida) : vertice.listaArestaSaida == null;
+        return bairro.equals(vertice.bairro);
     }
 
     @Override
     public int hashCode() {
         int result = super.hashCode();
-        result = 31 * result + (bairro != null ? bairro.hashCode() : 0);
-        result = 31 * result + (listaArestaEntrada != null ? listaArestaEntrada.hashCode() : 0);
-        result = 31 * result + (listaArestaSaida != null ? listaArestaSaida.hashCode() : 0);
+        result = 31 * result + bairro.hashCode();
         return result;
     }
 }

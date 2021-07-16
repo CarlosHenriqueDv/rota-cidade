@@ -11,23 +11,26 @@ public class GrafoTest {
     public static void main(String[] args) {
 
         //Grafo Entrada: AB5, BC4, CD8, DC8, DE6, AD5, CE2, EB3, AE7
+        //vertices A,B,C,D,E
         Grafo grafo = new Grafo();
 
         grafo.criaEAdicionaVerticeNoGrafo("A");
         grafo.criaEAdicionaVerticeNoGrafo("B");
         grafo.criaEAdicionaVerticeNoGrafo("C");
         grafo.criaEAdicionaVerticeNoGrafo("D");
-        grafo.criaEAdicionaVerticeNoGrafo("C");
+        grafo.criaEAdicionaVerticeNoGrafo("E");
 
 
-        grafo.adicionaAresta(new BigDecimal(5), new Vertice("A"), new Vertice("B"));
-        grafo.adicionaAresta(new BigDecimal(4), new Vertice("B"), new Vertice("C"));
+        grafo.adicionaAresta(new BigDecimal(5), grafo.buscaVertice("A"), grafo.buscaVertice("B"));
+        grafo.adicionaAresta(new BigDecimal(4), grafo.buscaVertice("B"), grafo.buscaVertice("C"));
+        grafo.adicionaAresta(new BigDecimal(8), grafo.buscaVertice("C"), grafo.buscaVertice("D"));
+        grafo.adicionaAresta(new BigDecimal(6), grafo.buscaVertice("D"), grafo.buscaVertice("E"));
+        grafo.adicionaAresta(new BigDecimal(5), grafo.buscaVertice("A"), grafo.buscaVertice("D"));
+        grafo.adicionaAresta(new BigDecimal(2), grafo.buscaVertice("C"), grafo.buscaVertice("E"));
+        grafo.adicionaAresta(new BigDecimal(3), grafo.buscaVertice("E"), grafo.buscaVertice("B"));
+        grafo.adicionaAresta(new BigDecimal(7), grafo.buscaVertice("A"), grafo.buscaVertice("E"));
 
-        grafo.adicionaAresta(new BigDecimal(3), new Vertice("A"), new Vertice("D"));
 
-        grafo.adicionaAresta(new BigDecimal(3), new Vertice("C"), new Vertice("B"));
-        grafo.adicionaAresta(new BigDecimal(2), new Vertice("B"), new Vertice("C"));
-        grafo.adicionaAresta(new BigDecimal(6), new Vertice("B"), new Vertice("A"));
 
         List<Vertice> verticesVisitados = new ArrayList<>();
         List<Vertice> fila = new ArrayList<>();

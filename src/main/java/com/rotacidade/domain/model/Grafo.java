@@ -51,13 +51,13 @@ public class Grafo extends AbstractEntity<Long> {
 
     }
 
-    public void adicionaAresta(BigDecimal distancia, Vertice verticeInicio, Vertice verticeFim ){
-        Vertice inicio = buscaVertice(verticeInicio.getBairro());
-        Vertice fim = buscaVertice(verticeInicio.getBairro());
+    public void adicionaAresta(BigDecimal distancia, Vertice verticeOrigem, Vertice verticeDestino ){
+        Vertice inicio = buscaVertice(verticeOrigem.getBairro());
+        Vertice fim = buscaVertice(verticeDestino.getBairro());
         Aresta aresta = new Aresta(inicio, fim, distancia);
 
-        verticeInicio.adicionaArestaSaida(aresta);
-        verticeFim.adicionaArestaEntrada(aresta);
+        verticeOrigem.adicionaArestaSaida(aresta);
+        verticeDestino.adicionaArestaEntrada(aresta);
 
         this.listaDeArestas.add(aresta);
     }

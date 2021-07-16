@@ -12,8 +12,6 @@ public class Vertice extends AbstractEntity<Long> {
 
     public Vertice(String bairro) {
         this.bairro = bairro;
-        this.listaArestaEntrada  = new ArrayList<>();
-        this.listaArestaSaida = new ArrayList<>();
     }
 
     public String getBairro() {
@@ -25,7 +23,7 @@ public class Vertice extends AbstractEntity<Long> {
     }
 
     public ArrayList<Aresta> getListaArestaEntrada() {
-        return listaArestaEntrada;
+        return this.listaArestaEntrada == null ? new ArrayList<>() : listaArestaEntrada;
     }
 
     public void setListaArestaEntrada(ArrayList<Aresta> listaArestaEntrada) {
@@ -33,7 +31,7 @@ public class Vertice extends AbstractEntity<Long> {
     }
 
     public ArrayList<Aresta> getListaArestaSaida() {
-        return listaArestaSaida;
+        return this.listaArestaSaida == null ? new ArrayList<>() : listaArestaSaida;
     }
 
     public void setListaArestaSaida(ArrayList<Aresta> listaArestaSaida) {
@@ -41,10 +39,16 @@ public class Vertice extends AbstractEntity<Long> {
     }
 
     public void adicionaArestaEntrada(Aresta arestaEntrada){
+        if (this.listaArestaEntrada == null){
+            this.listaArestaEntrada = new ArrayList<>();
+        }
         this.listaArestaEntrada.add(arestaEntrada);
     }
 
     public void adicionaArestaSaida(Aresta arestaSaida){
+        if (this.listaArestaSaida == null){
+            this.listaArestaSaida = new ArrayList<>();
+        }
         this.listaArestaSaida.add(arestaSaida);
     }
 

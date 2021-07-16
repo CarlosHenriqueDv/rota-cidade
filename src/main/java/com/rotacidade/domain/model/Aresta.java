@@ -40,14 +40,7 @@ public class Aresta extends AbstractEntity<Long> {
         this.distancia = distancia;
     }
 
-    @Override
-    public String toString() {
-        return "Aresta{" +
-                "inicio=" + inicio +
-                ", fim=" + fim +
-                ", distancia=" + distancia +
-                '}';
-    }
+
 
     @Override
     public boolean equals(Object o) {

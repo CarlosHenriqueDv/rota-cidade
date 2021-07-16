@@ -39,4 +39,35 @@ public class Aresta extends AbstractEntity<Long> {
     public void setDistancia(BigDecimal distancia) {
         this.distancia = distancia;
     }
+
+    @Override
+    public String toString() {
+        return "Aresta{" +
+                "inicio=" + inicio +
+                ", fim=" + fim +
+                ", distancia=" + distancia +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+
+        Aresta aresta = (Aresta) o;
+
+        if (inicio != null ? !inicio.equals(aresta.inicio) : aresta.inicio != null) return false;
+        if (fim != null ? !fim.equals(aresta.fim) : aresta.fim != null) return false;
+        return distancia != null ? distancia.equals(aresta.distancia) : aresta.distancia == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = super.hashCode();
+        result = 31 * result + (inicio != null ? inicio.hashCode() : 0);
+        result = 31 * result + (fim != null ? fim.hashCode() : 0);
+        result = 31 * result + (distancia != null ? distancia.hashCode() : 0);
+        return result;
+    }
 }

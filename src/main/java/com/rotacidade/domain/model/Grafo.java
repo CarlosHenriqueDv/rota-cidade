@@ -51,7 +51,7 @@ public class Grafo extends AbstractEntity<Long> {
 
     }
 
-    public void adicionaAresta(BigDecimal distancia, Vertice verticeOrigem, Vertice verticeDestino ){
+    public void adicionaAresta(Vertice verticeOrigem, Vertice verticeDestino, BigDecimal distancia){
         Vertice inicio = buscaVertice(verticeOrigem.getBairro());
         Vertice fim = buscaVertice(verticeDestino.getBairro());
         Aresta aresta = new Aresta(inicio, fim, distancia);

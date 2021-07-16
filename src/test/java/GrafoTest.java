@@ -21,14 +21,14 @@ public class GrafoTest {
         grafo.criaEAdicionaVerticeNoGrafo("E");
 
 
-        grafo.adicionaAresta(new BigDecimal(5), grafo.buscaVertice("A"), grafo.buscaVertice("B"));
-        grafo.adicionaAresta(new BigDecimal(4), grafo.buscaVertice("B"), grafo.buscaVertice("C"));
-        grafo.adicionaAresta(new BigDecimal(8), grafo.buscaVertice("C"), grafo.buscaVertice("D"));
-        grafo.adicionaAresta(new BigDecimal(6), grafo.buscaVertice("D"), grafo.buscaVertice("E"));
-        grafo.adicionaAresta(new BigDecimal(5), grafo.buscaVertice("A"), grafo.buscaVertice("D"));
-        grafo.adicionaAresta(new BigDecimal(2), grafo.buscaVertice("C"), grafo.buscaVertice("E"));
-        grafo.adicionaAresta(new BigDecimal(3), grafo.buscaVertice("E"), grafo.buscaVertice("B"));
-        grafo.adicionaAresta(new BigDecimal(7), grafo.buscaVertice("A"), grafo.buscaVertice("E"));
+        grafo.adicionaAresta(grafo.buscaVertice("A"), grafo.buscaVertice("B"),new BigDecimal(5));
+        grafo.adicionaAresta(grafo.buscaVertice("B"), grafo.buscaVertice("C"),new BigDecimal(4));
+        grafo.adicionaAresta(grafo.buscaVertice("C"), grafo.buscaVertice("D"),new BigDecimal(8));
+        grafo.adicionaAresta(grafo.buscaVertice("D"), grafo.buscaVertice("E"),new BigDecimal(6));
+        grafo.adicionaAresta(grafo.buscaVertice("A"), grafo.buscaVertice("D"),new BigDecimal(5));
+        grafo.adicionaAresta(grafo.buscaVertice("C"), grafo.buscaVertice("E"),new BigDecimal(2));
+        grafo.adicionaAresta(grafo.buscaVertice("E"), grafo.buscaVertice("B"),new BigDecimal(3));
+        grafo.adicionaAresta(grafo.buscaVertice("A"), grafo.buscaVertice("E"),new BigDecimal(7));
 
 
 

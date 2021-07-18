@@ -1,10 +1,9 @@
 package com.rotacidade.domain.model;
 
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "vertice")
@@ -13,12 +12,17 @@ public class Vertice extends AbstractEntity<Long> {
     @NotEmpty
     private String bairro;
 
-    private ArrayList<Aresta> listaArestaEntrada;
+    @OneToMany(mappedBy = "inicio" ,targetEntity = Aresta.class)
+    private List<Aresta> listaArestaEntrada;
 
-    private ArrayList<Aresta> listaArestaSaida;
+    @OneToMany(mappedBy = "fim", targetEntity = Aresta.class)
+    private List<Aresta> listaArestaSaida;
 
     @ManyToOne
     private Grafo grafo;
+
+    public Vertice() {
+    }
 
     public Vertice(String bairro) {
         this.bairro = bairro;
@@ -32,7 +36,7 @@ public class Vertice extends AbstractEntity<Long> {
         this.bairro = bairro;
     }
 
-    public ArrayList<Aresta> getListaArestaEntrada() {
+    public List<Aresta> getListaArestaEntrada() {
         return this.listaArestaEntrada == null ? new ArrayList<>() : listaArestaEntrada;
     }
 
@@ -40,7 +44,7 @@ public class Vertice extends AbstractEntity<Long> {
         this.listaArestaEntrada = listaArestaEntrada;
     }
 
-    public ArrayList<Aresta> getListaArestaSaida() {
+    public List<Aresta> getListaArestaSaida() {
         return this.listaArestaSaida == null ? new ArrayList<>() : listaArestaSaida;
     }
 

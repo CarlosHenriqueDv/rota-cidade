@@ -3,7 +3,9 @@ package com.rotacidade.endpoint;
 import com.rotacidade.domain.gerente.GerenteGrafo;
 import com.rotacidade.domain.model.Aresta;
 import com.rotacidade.domain.model.Grafo;
-import com.rotacidade.repositorio.VerticeRepositorio;
+import com.rotacidade.repositorio.GrafoRepositorio;
+
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -19,7 +21,7 @@ import java.util.List;
 public class GrafoEndPoint {
 
     @Resource
-    private VerticeRepositorio verticeRepositorio;
+    private GrafoRepositorio grafoRepositorio;
 
     @Resource
     private GerenteGrafo gerenteGrafo;
@@ -29,13 +31,13 @@ public class GrafoEndPoint {
     public ResponseEntity<?> save(@Valid @RequestBody List<Aresta> aresta){
 
         Grafo grafo = gerenteGrafo.buildGrafo(aresta);
+        return new ResponseEntity<>(grafoRepositorio.save(grafo), HttpStatus.CREATED);
 
 
 
 
 
-        return null;
-        //return new ResponseEntity<>(verticeRepositorio.save(aresta), HttpStatus.CREATED);
+
     }
 
 

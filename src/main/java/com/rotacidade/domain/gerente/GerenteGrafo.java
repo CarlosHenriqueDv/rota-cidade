@@ -14,17 +14,20 @@ public class GerenteGrafo {
 
 
     public Grafo buildGrafo(List<Aresta> arestas) throws RegraDeNegocioException {
-        AtomicReference<Grafo> grafo = new AtomicReference<>(new Grafo());
 
         validaArestas(arestas);
 
-        arestas.forEach(a -> grafo.set(new Grafo.GrafoBuilder()
-                .criaEAdicionaVerticeNoGrafo(a.getInicio().getBairro())
-                .criaEAdicionaVerticeNoGrafo(a.getFim().getBairro())
-                .adicionaAresta(a.getInicio().getBairro(), a.getFim().getBairro(), a.getDistancia())
-                .builder()));
+        Grafo.GrafoBuilder grafoBuilder = new Grafo.GrafoBuilder();
 
-        return grafo.get();
+        arestas.forEach(aresta ->
+                grafoBuilder.criaEAdicionaVerticeNoGrafo(aresta.getInicio().getBairro())
+                .criaEAdicionaVerticeNoGrafo(aresta.getFim().getBairro())
+                .adicionaAresta(aresta.getInicio().getBairro(), aresta.getFim().getBairro(), aresta.getDistancia()));
+        Grafo grafo = grafoBuilder.builder();
+
+        grafo.getListaDeVertices().forEach(v -> v.setGrafo(grafo));
+        grafo.getListaDeArestas().forEach(a -> a.setGrafo(grafo));
+        return grafo;
     }
 
     public void validaArestas(List<Aresta> arestas) throws RegraDeNegocioException {

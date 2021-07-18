@@ -5,7 +5,9 @@ import com.rotacidade.domain.exception.RegraDeNegocioException;
 import com.sun.org.apache.xalan.internal.xsltc.compiler.CompilerException;
 
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 
@@ -13,9 +15,9 @@ import java.util.ArrayList;
 @Table(name = "grafo")
 public class Grafo extends AbstractEntity<Long> {
 
-
+    @Transient
     private ArrayList<Vertice> listaDeVertices;
-
+    @Transient
     private ArrayList<Aresta> listaDeArestas;
 
     public Grafo(ArrayList<Vertice> listaDeVertices, ArrayList<Aresta> listaDeArestas) {

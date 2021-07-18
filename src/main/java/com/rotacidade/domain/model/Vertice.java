@@ -1,14 +1,24 @@
 package com.rotacidade.domain.model;
 
+import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+import javax.validation.constraints.NotEmpty;
 import java.util.ArrayList;
 
+@Entity
+@Table(name = "vertice")
 public class Vertice extends AbstractEntity<Long> {
 
+    @NotEmpty
     private String bairro;
 
     private ArrayList<Aresta> listaArestaEntrada;
 
     private ArrayList<Aresta> listaArestaSaida;
+
+    @ManyToOne
+    private Grafo grafo;
 
     public Vertice(String bairro) {
         this.bairro = bairro;
@@ -68,5 +78,13 @@ public class Vertice extends AbstractEntity<Long> {
         int result = super.hashCode();
         result = 31 * result + bairro.hashCode();
         return result;
+    }
+
+    public Grafo getGrafo() {
+        return grafo;
+    }
+
+    public void setGrafo(Grafo grafo) {
+        this.grafo = grafo;
     }
 }

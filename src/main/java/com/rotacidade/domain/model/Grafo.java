@@ -1,17 +1,20 @@
 package com.rotacidade.domain.model;
 
 
+import com.rotacidade.domain.exception.RegraDeNegocioException;
 import com.sun.org.apache.xalan.internal.xsltc.compiler.CompilerException;
-import jdk.nashorn.internal.codegen.CompilationException;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 
-
+@Entity
+@Table(name = "grafo")
 public class Grafo extends AbstractEntity<Long> {
 
-    private ArrayList<Vertice> listaDeVertices;
 
+    private ArrayList<Vertice> listaDeVertices;
 
     private ArrayList<Aresta> listaDeArestas;
 
@@ -39,11 +42,12 @@ public class Grafo extends AbstractEntity<Long> {
             adicionaVerticeNoGrafo(vertice);
             return this;
         }
-        public void adicionaVerticeNoGrafo(Vertice vertice){
+        public GrafoBuilder adicionaVerticeNoGrafo(Vertice vertice){
             if (listaDeVertices == null) {
                 this.listaDeVertices = new ArrayList<>();
             }
             this.listaDeVertices.add(vertice);
+            return this;
 
         }
 
@@ -65,7 +69,7 @@ public class Grafo extends AbstractEntity<Long> {
 
         public Grafo builder() throws CompilerException {
             if (this.listaDeVertices.isEmpty() || this.listaDeVertices.size() < 2 || this.listaDeArestas.isEmpty()){
-                throw new CompilerException("Obrigatório ter pelo menos duas arestas e um vetice");
+                throw new RegraDeNegocioException("Obrigatório ter pelo menos duas arestas e um vetice");
             }else{
                 return new Grafo(this.listaDeVertices, this.listaDeArestas);
             }

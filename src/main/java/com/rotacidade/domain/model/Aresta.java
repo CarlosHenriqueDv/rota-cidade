@@ -1,7 +1,13 @@
 package com.rotacidade.domain.model;
 
+import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+import javax.validation.constraints.NotEmpty;
 import java.math.BigDecimal;
 
+@Entity
+@Table(name = "aresta")
 public class Aresta extends AbstractEntity<Long> {
 
     private Vertice inicio;
@@ -9,6 +15,12 @@ public class Aresta extends AbstractEntity<Long> {
     private Vertice fim;
 
     private BigDecimal distancia;
+
+    @ManyToOne
+    private Grafo grafo;
+
+    public Aresta() {
+    }
 
     public Aresta(Vertice inicio, Vertice fim, BigDecimal distancia) {
         this.inicio = inicio;
@@ -62,5 +74,13 @@ public class Aresta extends AbstractEntity<Long> {
         result = 31 * result + (fim != null ? fim.hashCode() : 0);
         result = 31 * result + (distancia != null ? distancia.hashCode() : 0);
         return result;
+    }
+
+    public Grafo getGrafo() {
+        return grafo;
+    }
+
+    public void setGrafo(Grafo grafo) {
+        this.grafo = grafo;
     }
 }

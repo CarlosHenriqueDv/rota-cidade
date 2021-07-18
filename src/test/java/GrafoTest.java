@@ -22,7 +22,15 @@ public class GrafoTest {
                     .criaEAdicionaVerticeNoGrafo("B")
                     .criaEAdicionaVerticeNoGrafo("C")
                     .criaEAdicionaVerticeNoGrafo("D")
+                    .criaEAdicionaVerticeNoGrafo("E")
                     .adicionaAresta("A", "B", new BigDecimal(2))
+                    .adicionaAresta("B", "C", new BigDecimal(4))
+                    .adicionaAresta("C", "D", new BigDecimal(4))
+                    .adicionaAresta("D", "E", new BigDecimal(6))
+                    .adicionaAresta("A", "D", new BigDecimal(5))
+                    .adicionaAresta("C", "E", new BigDecimal(4))
+                    .adicionaAresta("E", "B", new BigDecimal(4))
+                    .adicionaAresta("A", "E", new BigDecimal(4))
                     .builder();
 
 

@@ -18,7 +18,7 @@ public class Vertice extends AbstractEntity<Long> {
     @OneToMany(mappedBy = "fim", targetEntity = Aresta.class)
     private List<Aresta> listaArestaSaida;
 
-    @ManyToOne
+    @ManyToOne(targetEntity = Grafo.class)
     private Grafo grafo;
 
     public Vertice() {

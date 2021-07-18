@@ -7,17 +7,18 @@ import com.sun.org.apache.xalan.internal.xsltc.compiler.CompilerException;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
 @Table(name = "grafo")
 public class Grafo extends AbstractEntity<Long> {
 
-    @Transient
-    private ArrayList<Vertice> listaDeVertices;
+    @OneToMany(mappedBy = "grafo")
+    private List<Vertice> listaDeVertices;
 
-    @Transient
-    private ArrayList<Aresta> listaDeArestas;
+    @OneToMany(mappedBy = "grafo")
+    private List<Aresta> listaDeArestas;
 
     public Grafo(ArrayList<Vertice> listaDeVertices, ArrayList<Aresta> listaDeArestas) {
         this.listaDeVertices = listaDeVertices;
@@ -82,7 +83,7 @@ public class Grafo extends AbstractEntity<Long> {
 
     }
 
-    public ArrayList<Vertice> getListaDeVertices() {
+    public List<Vertice> getListaDeVertices() {
         return listaDeVertices;
     }
 
@@ -90,7 +91,7 @@ public class Grafo extends AbstractEntity<Long> {
         this.listaDeVertices = listaDeVertices;
     }
 
-    public ArrayList<Aresta> getListaDeArestas() {
+    public List<Aresta> getListaDeArestas() {
         return listaDeArestas;
     }
 

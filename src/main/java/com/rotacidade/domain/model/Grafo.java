@@ -10,6 +10,7 @@ import javax.persistence.Table;
 import javax.persistence.Transient;
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Objects;
 
 @Entity
 @Table(name = "grafo")
@@ -41,7 +42,10 @@ public class Grafo extends AbstractEntity<Long> {
 
         public GrafoBuilder criaEAdicionaVerticeNoGrafo(String nomeVertice){
             Vertice vertice = new Vertice(nomeVertice);
-            adicionaVerticeNoGrafo(vertice);
+            if(Objects.isNull(buscaVertice(nomeVertice))){
+                adicionaVerticeNoGrafo(vertice);
+            }
+
             return this;
         }
         public GrafoBuilder adicionaVerticeNoGrafo(Vertice vertice){

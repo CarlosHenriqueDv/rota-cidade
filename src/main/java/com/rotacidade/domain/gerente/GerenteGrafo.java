@@ -36,6 +36,10 @@ public class GerenteGrafo {
             if (a.getInicio()== null || a.getFim()== null || a.getDistancia()== null ){
                 throw new RegraDeNegocioException("Não é permitido a criação de grafo com aresta sem um início, fim ou sem a distância");
             }
+
+            if (a.getInicio().equals(a.getFim())){
+                throw new RegraDeNegocioException("A origem não pode ser igual ao destino");
+            }
         });
     }
 }

@@ -30,13 +30,8 @@ public class GrafoEndPoint {
     @PostMapping
     public ResponseEntity<?> save(@Valid @RequestBody List<Aresta> aresta){
 
-        Grafo grafo = gerenteGrafo.buildGrafo(aresta);
-        return new ResponseEntity<>(grafoRepositorio.save(grafo), HttpStatus.CREATED);
-
-
-
-
-
+        grafoRepositorio.save(gerenteGrafo.buildGrafo(aresta));
+        return new ResponseEntity<>(HttpStatus.CREATED);
 
     }
 

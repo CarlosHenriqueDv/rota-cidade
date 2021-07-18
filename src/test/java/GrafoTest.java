@@ -1,3 +1,4 @@
+import com.rotacidade.domain.exception.RegraDeNegocioException;
 import com.rotacidade.domain.model.Aresta;
 import com.rotacidade.domain.model.Grafo;
 import com.rotacidade.domain.model.Vertice;
@@ -57,7 +58,7 @@ public class GrafoTest {
                 fila.remove(visitado);
             }
 
-        } catch (CompilerException e) {
+        } catch (RegraDeNegocioException e) {
             e.printStackTrace();
         }
 

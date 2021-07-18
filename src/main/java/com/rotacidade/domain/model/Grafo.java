@@ -67,7 +67,7 @@ public class Grafo extends AbstractEntity<Long> {
             return this.listaDeVertices.stream().filter(v -> v.getBairro().equals(nomeVertice)).findFirst().orElse(null);
         }
 
-        public Grafo builder() throws CompilerException {
+        public Grafo builder() throws RegraDeNegocioException {
             if (this.listaDeVertices.isEmpty() || this.listaDeVertices.size() < 2 || this.listaDeArestas.isEmpty()){
                 throw new RegraDeNegocioException("Obrigatório ter pelo menos duas arestas e um vetice");
             }else{

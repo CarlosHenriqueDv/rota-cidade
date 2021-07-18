@@ -2,6 +2,7 @@ package com.rotacidade.endpoint;
 
 import com.rotacidade.domain.gerente.GerenteGrafo;
 import com.rotacidade.domain.model.Aresta;
+import com.rotacidade.domain.model.Grafo;
 import com.rotacidade.repositorio.VerticeRepositorio;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -26,7 +27,8 @@ public class GrafoEndPoint {
 
     @PostMapping
     public ResponseEntity<?> save(@Valid @RequestBody List<Aresta> aresta){
-        gerenteGrafo.buildGrafo(aresta);
+
+        Grafo grafo = gerenteGrafo.buildGrafo(aresta);
 
 
 

@@ -1,5 +1,7 @@
 package com.rotacidade.domain.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import java.util.ArrayList;
@@ -12,12 +14,15 @@ public class Vertice extends AbstractEntity<Long> {
     @NotEmpty
     private String bairro;
 
+    @JsonIgnore
     @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "inicio" ,targetEntity = Aresta.class)
     private List<Aresta> listaArestaEntrada;
 
+    @JsonIgnore
     @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "fim", targetEntity = Aresta.class)
     private List<Aresta> listaArestaSaida;
 
+    @JsonIgnore
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, targetEntity = Grafo.class)
     @JoinColumn(name = "grafo_id", foreignKey = @ForeignKey(name = "fk_vertice"))
     private Grafo grafo;

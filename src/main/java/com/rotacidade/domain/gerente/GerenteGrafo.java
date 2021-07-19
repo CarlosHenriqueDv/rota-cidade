@@ -2,12 +2,12 @@ package com.rotacidade.domain.gerente;
 
 import com.rotacidade.domain.exception.RegraDeNegocioException;
 import com.rotacidade.domain.model.Aresta;
+import com.rotacidade.domain.model.DTO.GrafoDTO;
 import com.rotacidade.domain.model.Grafo;
-import com.sun.org.apache.xalan.internal.xsltc.compiler.CompilerException;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicReference;
 
 @Service
 public class GerenteGrafo {
@@ -41,5 +41,17 @@ public class GerenteGrafo {
                 throw new RegraDeNegocioException("A origem não pode ser igual ao destino");
             }
         });
+    }
+
+    public List<GrafoDTO> preencherGrafoDTO(Grafo grafo){
+        List<GrafoDTO> grafoDTOList = new ArrayList<>();
+
+        grafo.getListaDeArestas().forEach(g ->
+        {
+            GrafoDTO grafoDTO = new GrafoDTO(g.getGrafo().getId(),g.getInicio().getBairro(), g.getFim().getBairro(), g.getDistancia());
+            grafoDTOList.add(grafoDTO);
+        });
+        return grafoDTOList;
+
     }
 }

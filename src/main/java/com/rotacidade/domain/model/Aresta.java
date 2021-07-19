@@ -1,5 +1,7 @@
 package com.rotacidade.domain.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.math.BigDecimal;
 
@@ -17,6 +19,7 @@ public class Aresta extends AbstractEntity<Long> {
 
     private BigDecimal distancia;
 
+    @JsonIgnore
     @ManyToOne(cascade = CascadeType.PERSIST, targetEntity = Grafo.class)
     @JoinColumn(name = "grafo_id", foreignKey = @ForeignKey(name = "fk_aresta_grafo"))
     private Grafo grafo;

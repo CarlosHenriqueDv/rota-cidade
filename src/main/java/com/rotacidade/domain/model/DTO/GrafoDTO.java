@@ -1,14 +1,12 @@
 package com.rotacidade.domain.model.DTO;
 
-import com.rotacidade.domain.model.Aresta;
 
 import java.math.BigDecimal;
-import java.util.List;
+
 
 public class GrafoDTO {
 
     private Long idGrafo;
-    //private List<Aresta> listAresta;
     private String origem;
     private String destino;
     private BigDecimal distancia;

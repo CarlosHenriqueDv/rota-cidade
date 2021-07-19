@@ -2,7 +2,6 @@ package com.rotacidade.domain.model;
 
 
 import com.rotacidade.domain.exception.RegraDeNegocioException;
-import com.sun.org.apache.xalan.internal.xsltc.compiler.CompilerException;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -14,10 +13,11 @@ import java.util.Objects;
 @Table(name = "grafo")
 public class Grafo extends AbstractEntity<Long> {
 
-    @OneToMany(mappedBy = "grafo")
+    @OneToMany(mappedBy = "grafo", cascade = CascadeType.PERSIST, targetEntity = Vertice.class)
     private List<Vertice> listaDeVertices;
 
-    @OneToMany(mappedBy = "grafo")
+
+    @OneToMany(mappedBy = "grafo", cascade = CascadeType.PERSIST, targetEntity = Aresta.class)
     private List<Aresta> listaDeArestas;
 
     public Grafo(ArrayList<Vertice> listaDeVertices, ArrayList<Aresta> listaDeArestas) {
@@ -73,11 +73,11 @@ public class Grafo extends AbstractEntity<Long> {
         }
 
         public Grafo builder() throws RegraDeNegocioException {
-            if (this.listaDeVertices.isEmpty() || this.listaDeVertices.size() < 2 || this.listaDeArestas.isEmpty()){
-                throw new RegraDeNegocioException("Obrigatório ter pelo menos duas arestas e um vetice");
-            }else{
+            /*if (this.listaDeVertices.isEmpty() || this.listaDeVertices.size() < 2 || this.listaDeArestas.isEmpty()){
+                throw new RegraDeNegocioException("Obrigatório ter pelo menos duas arestas e um vetice");*/
+            //}else{
                 return new Grafo(this.listaDeVertices, this.listaDeArestas);
-            }
+            //}
         }
 
 

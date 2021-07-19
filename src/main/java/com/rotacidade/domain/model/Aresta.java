@@ -7,17 +7,18 @@ import java.math.BigDecimal;
 @Table(name = "aresta")
 public class Aresta extends AbstractEntity<Long> {
 
-    @ManyToOne(targetEntity = Vertice.class)
-    @JoinColumn(name = "inicio_id", foreignKey = @ForeignKey(name = "fk_vertice"))
+    @ManyToOne(cascade = CascadeType.PERSIST, targetEntity = Vertice.class)
+    @JoinColumn(name = "inicio_id", foreignKey = @ForeignKey(name = "fk_aresta_inicio"))
     private Vertice inicio;
 
-    @ManyToOne(targetEntity = Vertice.class)
-    @JoinColumn(name = "fim_id", foreignKey = @ForeignKey(name = "fk_vertice1"))
+    @ManyToOne(cascade = CascadeType.PERSIST,targetEntity = Vertice.class)
+    @JoinColumn(name = "fim_id", foreignKey = @ForeignKey(name = "fk_aresta_fim"))
     private Vertice fim;
 
     private BigDecimal distancia;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST, targetEntity = Grafo.class)
+    @JoinColumn(name = "grafo_id", foreignKey = @ForeignKey(name = "fk_aresta_grafo"))
     private Grafo grafo;
 
     public Aresta() {

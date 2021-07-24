@@ -72,5 +72,16 @@ public class GrafoEndPoint {
     }
 
 
+    @GetMapping(value = "/rotas/de/{pontoA}/para/{pontoB}")
+    public ResponseEntity<?> rotas(@PathVariable("pontoA") String town1, @PathVariable("pontoB") String town2,
+                                   @RequestParam("maxStops") Long maxStops){
+        String cidade1 = town1;
+        String cidade2 = town2;
+        /*Long paradas = maxStops;*/
+
+        return null;
+    }
+
+
 
 }

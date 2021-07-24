@@ -6,8 +6,11 @@ import com.rotacidade.domain.model.DTO.GrafoDTO;
 import com.rotacidade.domain.model.Grafo;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class GerenteGrafo {
@@ -43,15 +46,19 @@ public class GerenteGrafo {
         });
     }
 
-    public List<GrafoDTO> preencherGrafoDTO(Grafo grafo){
+    public Map<Long, List<GrafoDTO>> preencherGrafoDTO(Grafo grafo){
         List<GrafoDTO> grafoDTOList = new ArrayList<>();
+        Map<Long, List<GrafoDTO>> mapa = new LinkedHashMap<>();
 
         grafo.getListaDeArestas().forEach(g ->
         {
-            GrafoDTO grafoDTO = new GrafoDTO(g.getGrafo().getId(),g.getInicio().getBairro(), g.getFim().getBairro(), g.getDistancia());
+            GrafoDTO grafoDTO = new GrafoDTO(g.getInicio().getBairro(), g.getFim().getBairro(), g.getDistancia());
             grafoDTOList.add(grafoDTO);
+
         });
-        return grafoDTOList;
+        mapa.put(grafo.getId(), grafoDTOList);
+
+        return mapa;
 
     }
 }

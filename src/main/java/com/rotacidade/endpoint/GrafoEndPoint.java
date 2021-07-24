@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import javax.validation.Valid;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @RestController
@@ -65,7 +66,7 @@ public class GrafoEndPoint {
         if (!grafoOptional.isPresent()){
             throw new RecursoNaoEncontradoException("Grafo não encontrado");
         }
-        List<GrafoDTO> grafoDTO = gerenteGrafo.preencherGrafoDTO(grafoOptional.get());
+        Map<Long, List<GrafoDTO>> grafoDTO = gerenteGrafo.preencherGrafoDTO(grafoOptional.get());
         return new ResponseEntity<>(grafoDTO, HttpStatus.OK);
 
     }

@@ -23,7 +23,7 @@ public class Vertice extends AbstractEntity<Long> {
     private List<Aresta> listaArestaSaida;
 
     @JsonIgnore
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, targetEntity = Grafo.class)
+    @ManyToOne(cascade = CascadeType.ALL, targetEntity = Grafo.class)
     @JoinColumn(name = "grafo_id", foreignKey = @ForeignKey(name = "fk_vertice"))
     private Grafo grafo;
 

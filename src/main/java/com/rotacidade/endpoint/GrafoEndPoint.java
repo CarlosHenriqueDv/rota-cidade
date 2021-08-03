@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.validation.Valid;
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -33,8 +34,8 @@ public class GrafoEndPoint {
     @Resource
     private GerenteGrafo gerenteGrafo;
 
-    @Resource
-    private VerticeRepositorio verticeRepositorio;
+//    @Resource
+//    private VerticeRepositorio verticeRepositorio;
 
     @Resource
     private ArestaRepositorio arestaRepositorio;
@@ -77,7 +78,9 @@ public class GrafoEndPoint {
                                    @RequestParam("maxStops") Long maxStops){
         String cidade1 = town1;
         String cidade2 = town2;
+        BigDecimal maximoDeParadas = maxStops == null ? BigDecimal.ZERO : new BigDecimal(maxStops);
         /*Long paradas = maxStops;*/
+        gerenteGrafo.constroiRotas(town1,town2, maximoDeParadas);
 
         return null;
     }

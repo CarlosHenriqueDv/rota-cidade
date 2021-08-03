@@ -4,8 +4,12 @@ import com.rotacidade.domain.exception.RegraDeNegocioException;
 import com.rotacidade.domain.model.Aresta;
 import com.rotacidade.domain.model.DTO.GrafoDTO;
 import com.rotacidade.domain.model.Grafo;
+import com.rotacidade.domain.model.Vertice;
+import com.rotacidade.repositorio.VerticeRepositorio;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -14,6 +18,9 @@ import java.util.Map;
 
 @Service
 public class GerenteGrafo {
+
+    @Resource
+    private VerticeRepositorio verticeRepositorio;
 
 
     public Grafo buildGrafo(List<Aresta> arestas) throws RegraDeNegocioException {
@@ -60,5 +67,13 @@ public class GerenteGrafo {
 
         return mapa;
 
+    }
+
+    public Grafo constroiRotas(String inicio, String fim, BigDecimal maximoParada){
+
+        Grafo grafo = verticeRepositorio.findByBairro(inicio).getGrafo();
+
+
+        return null;
     }
 }

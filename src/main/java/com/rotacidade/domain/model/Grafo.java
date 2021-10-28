@@ -2,12 +2,15 @@ package com.rotacidade.domain.model;
 
 
 import com.rotacidade.domain.exception.RegraDeNegocioException;
+import com.sun.org.apache.xalan.internal.xsltc.compiler.CompilerException;
+import javassist.CannotCompileException;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.concurrent.CompletionException;
 
 @Entity
 @Table(name = "grafo")
@@ -69,15 +72,18 @@ public class Grafo extends AbstractEntity<Long> {
         }
 
         private Vertice buscaVertice(String nomeVertice){
-            return this.listaDeVertices.stream().filter(v -> v.getBairro().equals(nomeVertice)).findFirst().orElse(null);
+            return this.listaDeVertices.stream()
+                    .filter(v -> v.getBairro().equals(nomeVertice))
+                    .findFirst().orElse(null);
         }
 
         public Grafo builder() throws RegraDeNegocioException {
-            /*if (this.listaDeVertices.isEmpty() || this.listaDeVertices.size() < 2 || this.listaDeArestas.isEmpty()){
-                throw new RegraDeNegocioException("Obrigatório ter pelo menos duas arestas e um vetice");*/
-            //}else{
+            if (this.listaDeVertices.isEmpty() || this.listaDeVertices.size() < 2 || this.listaDeArestas.isEmpty()){
+                throw new RegraDeNegocioException("Obrigatório ter pelo menos dois vertices e uma aresta");
+
+            }else{
                 return new Grafo(this.listaDeVertices, this.listaDeArestas);
-            //}
+            }
         }
 
 
@@ -97,6 +103,10 @@ public class Grafo extends AbstractEntity<Long> {
 
     public void setListaDeArestas(ArrayList<Aresta> listaDeArestas) {
         this.listaDeArestas = listaDeArestas;
+    }
+
+    public Vertice buscaVertice(String nomeVertice){
+        return this.listaDeVertices.stream().filter(v -> v.getBairro().equals(nomeVertice)).findFirst().orElse(null);
     }
 
 }

@@ -19,3 +19,14 @@ e selecionadar as dependências abaixo.
 
 #Documentação
 + Foi criada também uma documentação em Swagger que pode ser acessada no endereço: (http://localhost:8080/swagger-ui.html#/)
+
+# Rotas da aplicação
+Existem duas rotas finalizadas da aplicação e uma ainda em desenvolvimento:
+ - Para Cadastrar um grafo essa rota é responsável por receber um grafo no formato JSON e fazer o devido salvamento do mesmo.
+  Exemplo: localhost:8080/grafo que faz uso do verbo HTTP POST.
+ - Para recuperar os grafos salvos por ID. Exemplo localhost:8080/grafo/1 esta fazendo uso do verbo HTTP GET.
+ - Existe outra rota, porém essa ainda não foi finalizada, mas que existem testes é a rota quando informado um ponto A e um ponto B
+ a aplicação deve devolver todas as possíveis rotas entre esses pontos. Exempo localhost:8080/rotas/de/{pontoA}/para/{pontoB} 
+
+# Rodando a Aplicação
+  - A aplicação pode ser rodada com o comando *mvn spring-boot:run*  

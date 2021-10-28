@@ -19,32 +19,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c585f141-2f92-495e-9cc6-20be2f60f127" name="Default Changelist" comment="">
+    <list default="true" id="c585f141-2f92-495e-9cc6-20be2f60f127" name="Default Changelist" comment="para implementar novo endpoint de rotas do grafo">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/cshen.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/grafo-teste.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/GrafoBuscaRotasTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rota-cidade.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rota-cidade.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rotacidade/RotaCidadeApliccation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rotacidade/RotaCidadeApliccation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rotacidade/domain/gerente/GerenteGrafo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rotacidade/domain/gerente/GerenteGrafo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rotacidade/domain/model/Grafo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rotacidade/domain/model/Grafo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rotacidade/domain/model/Vertice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rotacidade/domain/model/Vertice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rotacidade/endpoint/GrafoEndPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rotacidade/endpoint/GrafoEndPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rotacidade/repositorio/ArestaRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rotacidade/repositorio/ArestaRepositorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rotacidade/repositorio/GrafoRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rotacidade/repositorio/GrafoRepositorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rotacidade/repositorio/VerticeRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rotacidade/repositorio/VerticeRepositorio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/GrafoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GrafoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rotacidade/RotaCidadeApliccation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rotacidade/RotaCidadeApliccation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rotacidade/domain/gerente/GerenteGrafo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rotacidade/domain/gerente/GerenteGrafo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rotacidade/domain/model/Grafo$GrafoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rotacidade/domain/model/Grafo$GrafoBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rotacidade/domain/model/Grafo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rotacidade/domain/model/Grafo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/rotacidade/domain/model/Vertice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rotacidade/domain/model/Vertice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rotacidade/endpoint/GrafoEndPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rotacidade/endpoint/GrafoEndPoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rotacidade/repositorio/ArestaRepositorio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rotacidade/repositorio/ArestaRepositorio.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rotacidade/repositorio/GrafoRepositorio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rotacidade/repositorio/GrafoRepositorio.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rotacidade/repositorio/VerticeRepositorio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rotacidade/repositorio/VerticeRepositorio.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/rota-cidade-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/rota-cidade-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/rota-cidade-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/rota-cidade-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/GrafoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/GrafoTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,41 +48,64 @@
     <session id="-1679023042">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="2" />
+          <entry key="class" value="3" />
           <entry key="iml" value="1" />
-          <entry key="java" value="10" />
-          <entry key="md" value="1" />
-          <entry key="xml" value="2" />
+          <entry key="java" value="16" />
+          <entry key="json" value="1" />
+          <entry key="md" value="2" />
+          <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="2" />
+          <entry key="CLASS" value="3" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="10" />
-          <entry key="Markdown" value="1" />
-          <entry key="XML" value="2" />
+          <entry key="JAVA" value="16" />
+          <entry key="Markdown" value="2" />
+          <entry key="TypeScript" value="1" />
+          <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="945" />
-          <entry key="txt" value="7" />
+          <entry key="java" value="4333" />
+          <entry key="md" value="805" />
+          <entry key="txt" value="57" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="945" />
-          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="JAVA" value="4333" />
+          <entry key="Markdown" value="805" />
+          <entry key="PLAIN_TEXT" value="57" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.36" value="1" />
-          <entry key="project.open.time.49" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.41" value="1" />
+          <entry key="project.open.time.47" value="1" />
+          <entry key="project.open.time.49" value="2" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.57" value="1" />
+          <entry key="project.open.time.59" value="1" />
+          <entry key="project.open.time.6" value="3" />
+          <entry key="project.opened" value="15" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.create.new.nocheckout" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="TypeScriptServerServiceImpl" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -99,8 +115,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rotacidade/endpoint/GrafoEndPoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="84" selection-start-line="84" selection-end-line="84" />
+            <state relative-caret-position="274">
+              <caret line="82" column="45" selection-start-line="82" selection-start-column="45" selection-end-line="82" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,18 +125,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rotacidade/repositorio/GrafoRepositorio.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rotacidade/repositorio/VerticeRepositorio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="189">
               <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
             </state>
           </provider>
@@ -129,8 +136,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rotacidade/domain/gerente/GerenteGrafo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1021">
-              <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+            <state relative-caret-position="315">
+              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,10 +146,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/GrafoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="49" column="56" lean-forward="true" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="293">
+                <caret line="31" column="67" lean-forward="true" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -150,8 +160,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rotacidade/domain/model/Grafo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-102">
-              <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+            <state relative-caret-position="861">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -159,8 +172,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rotacidade/domain/model/Vertice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+            <state relative-caret-position="1533">
+              <caret line="86" column="18" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -178,8 +191,18 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>foreach</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -187,13 +210,17 @@
         <option value="$PROJECT_DIR$/src/main/java/com/rotacidade/repositorio/AbstractDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rotacidade/repositorio/ArestaRepositorio.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rotacidade/repositorio/GrafoRepositorio.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rotacidade/domain/model/Grafo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rotacidade/repositorio/VerticeRepositorio.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rotacidade/RotaCidadeApliccation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rotacidade/endpoint/GrafoEndPoint.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rotacidade/domain/exception/RegraDeNegocioException.java" />
+        <option value="$PROJECT_DIR$/src/test/java/GrafoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rotacidade/domain/model/Vertice.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rotacidade/domain/gerente/GerenteGrafo.java" />
-        <option value="$PROJECT_DIR$/src/test/java/GrafoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rotacidade/domain/model/Grafo.java" />
+        <option value="$PROJECT_DIR$/src/test/java/GrafoBuscaRotasTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rotacidade/endpoint/GrafoEndPoint.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/grafo-teste.json" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -204,19 +231,38 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="137" />
+    <option name="y" value="6" />
     <option name="width" value="699" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectId" id="1vWzJ1PHXD0qv7PLce27l7V0vgs" />
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>MismatchedCollectionQueryUpdate</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -301,6 +347,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -318,10 +365,14 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1627952089412" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1635381873388" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="typescript-compiler-editor-notification" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -335,7 +386,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GrafoTest">
+  <component name="RunManager" selected="Application.GrafoBuscaRotasTest">
+    <configuration name="GrafoBuscaRotasTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GrafoBuscaRotasTest" />
+      <module name="rota-cidade" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GrafoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GrafoTest" />
       <module name="rota-cidade" />
@@ -353,9 +411,11 @@
     <list>
       <item itemvalue="Spring Boot.RotaCidadeApliccation" />
       <item itemvalue="Application.GrafoTest" />
+      <item itemvalue="Application.GrafoBuscaRotasTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GrafoBuscaRotasTest" />
         <item itemvalue="Application.GrafoTest" />
       </list>
     </recent_temporary>
@@ -373,7 +433,19 @@
       <workItem from="1626692559075" duration="1222000" />
       <workItem from="1627600387014" duration="4164000" />
       <workItem from="1627841099887" duration="6761000" />
-      <workItem from="1627947336926" duration="3551000" />
+      <workItem from="1627947336926" duration="6881000" />
+      <workItem from="1628041373861" duration="474000" />
+      <workItem from="1628297252064" duration="1101000" />
+      <workItem from="1628352942321" duration="21481000" />
+      <workItem from="1628642361001" duration="614000" />
+      <workItem from="1628723233276" duration="10683000" />
+      <workItem from="1629043651925" duration="2734000" />
+      <workItem from="1629502038013" duration="1800000" />
+      <workItem from="1629506188220" duration="4372000" />
+      <workItem from="1629764694477" duration="1657000" />
+      <workItem from="1629767848417" duration="1343000" />
+      <workItem from="1630371071768" duration="2080000" />
+      <workItem from="1635380762675" duration="1209000" />
     </task>
     <task id="LOCAL-00001" summary="criação de README.md">
       <created>1626693764910</created>
@@ -389,18 +461,25 @@
       <option name="project" value="LOCAL" />
       <updated>1627088286151</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="para implementar novo endpoint de rotas do grafo">
+      <created>1627952459767</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1627952459767</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18750000" />
+    <option name="totallyTimeSpent" value="71628000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Persistence" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4918033" weight="0.21331316" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4918033" visible="true" weight="0.22541603" />
       <window_info id="Structure" order="2" sideWeight="0.5081967" side_tool="true" weight="0.19515885" />
       <window_info id="Designer" order="3" />
       <window_info id="Image Layers" order="4" />
@@ -408,6 +487,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Web" order="8" sideWeight="0.51014495" side_tool="true" weight="0.19515885" />
+      <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32786885" />
       <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
@@ -416,14 +496,14 @@
       <window_info anchor="bottom" id="Application Servers" order="5" sideWeight="0.49924356" weight="0.27377048" />
       <window_info anchor="bottom" id="Spring" order="6" weight="0.37704918" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.45612708" side_tool="true" weight="0.51311475" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.36393443" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.27704918" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32786885" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="11" visible="true" weight="0.3442623" />
-      <window_info anchor="bottom" x="22" y="235" width="1322" height="258" id="Debug" order="12" sideWeight="0.51966715" weight="0.36557376" />
+      <window_info anchor="bottom" id="Run" order="11" weight="0.36885247" />
+      <window_info anchor="bottom" x="22" y="235" width="1322" height="258" id="Debug" order="12" sideWeight="0.51966715" weight="0.4" />
       <window_info anchor="bottom" id="Run Dashboard" order="13" sideWeight="0.4969743" weight="0.34262297" />
       <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.4977307" weight="0.26885247" />
-      <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.5438729" weight="0.35081968" />
+      <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.5438729" weight="0.3262295" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -438,46 +518,6 @@
       <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.32980332" />
       <window_info anchor="right" id="Bean Validation" order="12" weight="0.32980332" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Persistence" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4918033" weight="0.21331316" />
-      <window_info id="Structure" order="2" sideWeight="0.5081967" side_tool="true" weight="0.19515885" />
-      <window_info id="Designer" order="3" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info id="Web" order="8" sideWeight="0.51014495" side_tool="true" weight="0.19515885" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32786885" />
-      <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="4" weight="0.30491802" />
-      <window_info anchor="bottom" id="Application Servers" order="5" sideWeight="0.49924356" weight="0.27377048" />
-      <window_info anchor="bottom" id="Spring" order="6" weight="0.37704918" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.45612708" side_tool="true" weight="0.51311475" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.36393443" />
-      <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32786885" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="11" visible="true" weight="0.3442623" />
-      <window_info anchor="bottom" x="22" y="235" width="1322" height="258" id="Debug" order="12" sideWeight="0.51966715" weight="0.36557376" />
-      <window_info anchor="bottom" id="Run Dashboard" order="13" sideWeight="0.4969743" weight="0.34262297" />
-      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.4977307" weight="0.26885247" />
-      <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.5438729" weight="0.35081968" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="JSF" order="5" weight="0.32980332" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="right" id="CDI" order="8" weight="0.32980332" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32980332" />
-      <window_info anchor="right" id="Database" order="10" weight="0.32980332" />
-      <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.32980332" />
-      <window_info anchor="right" id="Bean Validation" order="12" weight="0.32980332" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -494,6 +534,14 @@
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
               </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
             </State>
           </value>
         </entry>
@@ -507,7 +555,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="criação de README.md" />
     <MESSAGE value="ajustes" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajustes" />
+    <MESSAGE value="para implementar novo endpoint de rotas do grafo" />
+    <option name="LAST_COMMIT_MESSAGE" value="para implementar novo endpoint de rotas do grafo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -548,32 +597,112 @@
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/GrafoBuscaRotasTest.java</url>
+          <line>66</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/GrafoBuscaRotasTest.java</url>
+          <line>81</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/GrafoBuscaRotasTest.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/GrafoBuscaRotasTest.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="inicio.getBairro()" language="JAVA" />
+        <watch expression="a.getFim()" language="JAVA" />
+        <watch expression="fim.getBairro()" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
-    <expressions id="evaluateExpression">
+    <expressions id="watch">
       <expression>
-        <expression-string>verticeInicio</expression-string>
+        <expression-string>fim.getBairro()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>grafo</expression-string>
+        <expression-string>a.getFim()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>verticesVisitados</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>inicio.getBairro()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>verticesVisitados.contains(inicio)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>a.getFim()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>inicio.getListaArestaSaida()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>grafo.getListaDeVertices()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>verticesVisitados.get(0)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>verticesVisitados.add(a.getFim())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>verticesVisitados</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>verticesVisitados.contains(a.getFim())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>a.getFim().getBairro()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.18.RELEASE/spring-web-5.1.18.RELEASE.jar!/org/springframework/web/bind/annotation/GetMapping.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -588,11 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-714" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rotacidade/repositorio/AbstractDao.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.1.20.RELEASE/spring-data-jpa-2.1.20.RELEASE.jar!/org/springframework/data/jpa/repository/support/JpaRepositoryImplementation.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -605,9 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -656,44 +777,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/GrafoTest.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_251/src.zip!/java/lang/RuntimeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_251/src.zip!/java/lang/Exception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rotacidade/domain/exception/RegraDeNegocioException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3111" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_251/src.zip!/java/lang/IllegalArgumentException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rotacidade/repositorio/VerticeRepositorio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="189">
           <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rotacidade/domain/gerente/GerenteGrafo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1021">
-          <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rotacidade/endpoint/GrafoEndPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rotacidade/domain/model/Grafo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        <state relative-caret-position="861">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rotacidade/domain/model/Vertice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+        <state relative-caret-position="1533">
+          <caret line="86" column="18" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/GrafoBuscaRotasTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-483">
+          <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -702,8 +852,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/GrafoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="49" column="56" lean-forward="true" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
+        <state relative-caret-position="520">
+          <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rotacidade/domain/gerente/GerenteGrafo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/grafo-teste.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rotacidade/endpoint/GrafoEndPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="82" column="45" selection-start-line="82" selection-start-column="45" selection-end-line="82" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="293">
+            <caret line="31" column="67" lean-forward="true" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

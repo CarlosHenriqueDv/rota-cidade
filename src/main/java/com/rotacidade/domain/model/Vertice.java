@@ -84,6 +84,13 @@ public class Vertice extends AbstractEntity<Long> {
     }
 
     @Override
+    public String toString() {
+        return "Vertice{" +
+                "bairro='" + bairro + '\'' +
+                '}';
+    }
+
+    @Override
     public int hashCode() {
         int result = super.hashCode();
         result = 31 * result + bairro.hashCode();

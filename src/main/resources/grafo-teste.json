@@ -1,0 +1,31 @@
+[
+    {
+        "inicio" : "A", "fim" : "B", "distancia" : "5"
+    },
+    {
+        "inicio": "B", "fim": "C", "distancia":"4"
+    },
+    {
+        "inicio": "C", "fim": "D", "distancia":"8"
+    },
+    {
+        "inicio": "D", "fim": "C", "distancia":"8"
+    },
+    {
+        "inicio": "D", "fim": "E", "distancia":"6"
+    },
+    {
+        "inicio": "A", "fim": "D", "distancia":"5"
+    },
+    {
+        "inicio": "C", "fim": "E", "distancia":"2"
+    },
+    {
+        "inicio": "E", "fim": "B", "distancia":"3"
+    },
+    {
+        "inicio": "A", "fim": "E", "distancia":"7"
+    }
+
+
+]

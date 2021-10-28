@@ -38,7 +38,12 @@ public class GrafoTest {
 
             List<Vertice> verticesVisitados = new ArrayList<>();
             List<Vertice> fila = new ArrayList<>();
-            Vertice primeiro = grafo.getListaDeVertices().get(0);
+
+            Vertice primeiro = grafo.getListaDeVertices()
+                    .stream()
+                    .filter(i -> i.getBairro().equals("A"))
+                    .findAny()
+                    .orElse(null);
 
             verticesVisitados.add(primeiro);
             //System.out.print(primeiro.getBairro()+ " ->");
@@ -48,6 +53,7 @@ public class GrafoTest {
 
                 for (Aresta arestaPercorrida : visitado.getListaArestaSaida()) {
                     Vertice proximo = arestaPercorrida.getFim();
+
                     if (!verticesVisitados.contains(proximo)) {
                         verticesVisitados.add(proximo);
                         System.out.print("Saida de: " + arestaPercorrida.getInicio().getBairro() + " para: " + proximo.getBairro());

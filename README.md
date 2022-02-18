@@ -18,7 +18,7 @@ e selecionadar as dependências abaixo.
 + Para inicializar a aplicação basta inserir o comando **mvn spring-boot:run** no terminal.
 
 #Documentação
-+ Foi criada também uma documentação em Swagger que pode ser acessada no endereço: (http://localhost:8080/swagger-ui.html#/)
++ Foi criada também uma documentação em Swagger que após subir a aplicação pode ser acessada no endereço: (http://localhost:8080/swagger-ui.html#/)
 
 # Rotas da aplicação
 Existem duas rotas finalizadas da aplicação e uma ainda em desenvolvimento:
